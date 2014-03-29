@@ -7,14 +7,7 @@ class Gutter
   end
 
   def css
-    <<-eos
-#{top_css}
-#{right_css}
-#{bottom_css}
-#{left_css}
-#{horizontal_css}
-#{vertical_css}
-    eos
+    css_methods.inject("") {|string, method| string + self.send(method) + "\n"}
   end
 
   def top_css
@@ -46,6 +39,10 @@ class Gutter
   end
 
   private
+  def css_methods
+    [:top_css, :right_css, :bottom_css, :left_css, :horizontal_css, :vertical_css]
+  end
+
   def attributes(direction)
     "#{self.class::ATTRIBUTE_TYPE}-#{direction}: #{@value};"
   end
