@@ -44,7 +44,7 @@ class Gutter
   end
 
   def append_css
-    lambda {|string, method| string + self.send(method) + "\n"}
+    lambda {|string, method| "#{string}#{self.send(method)}\n"}
   end
 
   def attributes(direction)
