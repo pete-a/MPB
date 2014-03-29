@@ -7,7 +7,7 @@ class Gutter
   end
 
   def css
-    css_methods.inject("") {|string, method| string + self.send(method) + "\n"}
+    css_methods.inject("", &append_css)
   end
 
   def top_css
@@ -41,6 +41,10 @@ class Gutter
   private
   def css_methods
     [:top_css, :right_css, :bottom_css, :left_css, :horizontal_css, :vertical_css]
+  end
+
+  def append_css
+    lambda {|string, method| string + self.send(method) + "\n"}
   end
 
   def attributes(direction)
