@@ -1,5 +1,4 @@
-require_relative '../../lib/margin'
-require_relative '../../lib/gutter'
+require 'spec_helper'
 
 module MPB
   describe Margin do
@@ -31,6 +30,18 @@ module MPB
 
     it 'generates the horizontal css' do
       expect(margin.horizontal_css).to eq ".mhsm {@extend .mrsm, .mlsm;}"
+    end
+
+    it 'generates the whole css block' do
+      css = <<-eos
+#{margin.top_css}
+#{margin.right_css}
+#{margin.bottom_css}
+#{margin.left_css}
+#{margin.horizontal_css}
+#{margin.vertical_css}
+      eos
+      expect(margin.css).to eq css
     end
 
   end
