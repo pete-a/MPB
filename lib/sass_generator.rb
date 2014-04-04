@@ -11,11 +11,11 @@ module MPB
 
     private
     def margins
-      generate_gutters(Margin)
+      combine_gutters(Margin)
     end
 
     def paddings
-      generate_gutters(Padding)
+      combine_gutters(Padding)
     end
 
     def variables
@@ -26,7 +26,7 @@ module MPB
       @sizes.map{|size| size.declaration}
     end
 
-    def generate_gutters(gutter_klass)
+    def combine_gutters(gutter_klass)
       gutters(gutter_klass).join("\n")
     end
 
