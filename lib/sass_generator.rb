@@ -1,10 +1,8 @@
 module MPB
   class SassGenerator
 
-    def initialize(sizes)
-      @sizes = sizes.map do |size|
-        Size.new(size[0], size[1])
-      end
+    def initialize(sizes_hash)
+      @sizes = mapped_sizes(sizes_hash)
     end
 
     def generate
@@ -38,6 +36,10 @@ module MPB
 
     def gutter_hash(key)
       {key => variable_name(key)}
+    end
+
+    def mapped_sizes(sizes)
+      sizes.keys.map {|key| Size.new(key, sizes[key])}
     end
 
     class Size
