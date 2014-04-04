@@ -47,16 +47,17 @@ module MPB
         @key, @value = [key, value]
       end
 
-      def name
-        "$space-#{@key}"
-      end
-
       def hash
         {@key => name}
       end
 
       def declaration
         "#{name}: #{@value};"
+      end
+
+      private
+      def name
+        "$space-#{@key}"
       end
     end
 
