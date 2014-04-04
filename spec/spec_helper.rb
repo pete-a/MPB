@@ -1,1 +1,1 @@
-require_relative '../mpb'
+require 'mpb'
