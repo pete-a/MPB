@@ -1,6 +1,3 @@
-require 'margin'
-require 'padding'
-
 module MPB
   class SassGenerator
 
@@ -11,7 +8,7 @@ module MPB
     end
 
     def generate
-      "#{variables}/n/n#{margins}/n/n#{paddings}"
+      "#{variables}\n\n#{margins}\n#{paddings}"
     end
 
     private
@@ -24,7 +21,7 @@ module MPB
     end
 
     def variables
-      variable_declarations.join("/n")
+      variable_declarations.join("\n")
     end
 
     def variable_declarations
@@ -32,7 +29,7 @@ module MPB
     end
 
     def generate_gutters(gutter_klass)
-      gutters(gutter_klass).join("/n")
+      gutters(gutter_klass).join("\n")
     end
 
     def gutters(klass)
