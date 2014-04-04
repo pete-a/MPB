@@ -1,0 +1,136 @@
+$space-n: 0px;
+$space-px: 1px;
+$space-xs: 2px;
+$space-s: 5px;
+$space-m: 10px;
+$space-l: 20px;
+$space-xl: 40px;
+$space-xxl: 80px;
+
+.mtn {margin-top: $space-n;}
+.mrn {margin-right: $space-n;}
+.mbn {margin-bottom: $space-n;}
+.mln {margin-left: $space-n;}
+.mhn {@extend .mrn, .mln;}
+.mvn {@extend .mtn, .mbn;}
+.man {@extend .mtn, .mrn, .mbn, .mln;}
+
+.mtpx {margin-top: $space-px;}
+.mrpx {margin-right: $space-px;}
+.mbpx {margin-bottom: $space-px;}
+.mlpx {margin-left: $space-px;}
+.mhpx {@extend .mrpx, .mlpx;}
+.mvpx {@extend .mtpx, .mbpx;}
+.mapx {@extend .mtpx, .mrpx, .mbpx, .mlpx;}
+
+.mtxs {margin-top: $space-xs;}
+.mrxs {margin-right: $space-xs;}
+.mbxs {margin-bottom: $space-xs;}
+.mlxs {margin-left: $space-xs;}
+.mhxs {@extend .mrxs, .mlxs;}
+.mvxs {@extend .mtxs, .mbxs;}
+.maxs {@extend .mtxs, .mrxs, .mbxs, .mlxs;}
+
+.mts {margin-top: $space-s;}
+.mrs {margin-right: $space-s;}
+.mbs {margin-bottom: $space-s;}
+.mls {margin-left: $space-s;}
+.mhs {@extend .mrs, .mls;}
+.mvs {@extend .mts, .mbs;}
+.mas {@extend .mts, .mrs, .mbs, .mls;}
+
+.mtm {margin-top: $space-m;}
+.mrm {margin-right: $space-m;}
+.mbm {margin-bottom: $space-m;}
+.mlm {margin-left: $space-m;}
+.mhm {@extend .mrm, .mlm;}
+.mvm {@extend .mtm, .mbm;}
+.mam {@extend .mtm, .mrm, .mbm, .mlm;}
+
+.mtl {margin-top: $space-l;}
+.mrl {margin-right: $space-l;}
+.mbl {margin-bottom: $space-l;}
+.mll {margin-left: $space-l;}
+.mhl {@extend .mrl, .mll;}
+.mvl {@extend .mtl, .mbl;}
+.mal {@extend .mtl, .mrl, .mbl, .mll;}
+
+.mtxl {margin-top: $space-xl;}
+.mrxl {margin-right: $space-xl;}
+.mbxl {margin-bottom: $space-xl;}
+.mlxl {margin-left: $space-xl;}
+.mhxl {@extend .mrxl, .mlxl;}
+.mvxl {@extend .mtxl, .mbxl;}
+.maxl {@extend .mtxl, .mrxl, .mbxl, .mlxl;}
+
+.mtxxl {margin-top: $space-xxl;}
+.mrxxl {margin-right: $space-xxl;}
+.mbxxl {margin-bottom: $space-xxl;}
+.mlxxl {margin-left: $space-xxl;}
+.mhxxl {@extend .mrxxl, .mlxxl;}
+.mvxxl {@extend .mtxxl, .mbxxl;}
+.maxxl {@extend .mtxxl, .mrxxl, .mbxxl, .mlxxl;}
+
+.ptn {padding-top: $space-n;}
+.prn {padding-right: $space-n;}
+.pbn {padding-bottom: $space-n;}
+.pln {padding-left: $space-n;}
+.phn {@extend .prn, .pln;}
+.pvn {@extend .ptn, .pbn;}
+.pan {@extend .ptn, .prn, .pbn, .pln;}
+
+.ptpx {padding-top: $space-px;}
+.prpx {padding-right: $space-px;}
+.pbpx {padding-bottom: $space-px;}
+.plpx {padding-left: $space-px;}
+.phpx {@extend .prpx, .plpx;}
+.pvpx {@extend .ptpx, .pbpx;}
+.papx {@extend .ptpx, .prpx, .pbpx, .plpx;}
+
+.ptxs {padding-top: $space-xs;}
+.prxs {padding-right: $space-xs;}
+.pbxs {padding-bottom: $space-xs;}
+.plxs {padding-left: $space-xs;}
+.phxs {@extend .prxs, .plxs;}
+.pvxs {@extend .ptxs, .pbxs;}
+.paxs {@extend .ptxs, .prxs, .pbxs, .plxs;}
+
+.pts {padding-top: $space-s;}
+.prs {padding-right: $space-s;}
+.pbs {padding-bottom: $space-s;}
+.pls {padding-left: $space-s;}
+.phs {@extend .prs, .pls;}
+.pvs {@extend .pts, .pbs;}
+.pas {@extend .pts, .prs, .pbs, .pls;}
+
+.ptm {padding-top: $space-m;}
+.prm {padding-right: $space-m;}
+.pbm {padding-bottom: $space-m;}
+.plm {padding-left: $space-m;}
+.phm {@extend .prm, .plm;}
+.pvm {@extend .ptm, .pbm;}
+.pam {@extend .ptm, .prm, .pbm, .plm;}
+
+.ptl {padding-top: $space-l;}
+.prl {padding-right: $space-l;}
+.pbl {padding-bottom: $space-l;}
+.pll {padding-left: $space-l;}
+.phl {@extend .prl, .pll;}
+.pvl {@extend .ptl, .pbl;}
+.pal {@extend .ptl, .prl, .pbl, .pll;}
+
+.ptxl {padding-top: $space-xl;}
+.prxl {padding-right: $space-xl;}
+.pbxl {padding-bottom: $space-xl;}
+.plxl {padding-left: $space-xl;}
+.phxl {@extend .prxl, .plxl;}
+.pvxl {@extend .ptxl, .pbxl;}
+.paxl {@extend .ptxl, .prxl, .pbxl, .plxl;}
+
+.ptxxl {padding-top: $space-xxl;}
+.prxxl {padding-right: $space-xxl;}
+.pbxxl {padding-bottom: $space-xxl;}
+.plxxl {padding-left: $space-xxl;}
+.phxxl {@extend .prxxl, .plxxl;}
+.pvxxl {@extend .ptxxl, .pbxxl;}
+.paxxl {@extend .ptxxl, .prxxl, .pbxxl, .plxxl;}
