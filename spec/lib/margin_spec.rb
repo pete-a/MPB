@@ -40,6 +40,7 @@ module MPB
 #{margin.left_css}
 #{margin.horizontal_css}
 #{margin.vertical_css}
+#{margin.all_css}
       eos
       expect(margin.css).to eq css
     end

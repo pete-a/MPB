@@ -40,6 +40,7 @@ module MPB
 #{padding.left_css}
 #{padding.horizontal_css}
 #{padding.vertical_css}
+#{padding.all_css}
       eos
       expect(padding.css).to eq css
     end

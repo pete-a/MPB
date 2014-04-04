@@ -40,7 +40,7 @@ class Gutter
 
   private
   def css_methods
-    [:top_css, :right_css, :bottom_css, :left_css, :horizontal_css, :vertical_css]
+    [:top_css, :right_css, :bottom_css, :left_css, :horizontal_css, :vertical_css, :all_css]
   end
 
   def append_css
